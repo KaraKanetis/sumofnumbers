@@ -1,6 +1,4 @@
-console.log("✅ JS file is connected and working");
-
-// Sum using a for-loop
+// loo[
 function sumFor(numbers: number[]): number {
   let sum = 0;
   for (let i = 0; i < numbers.length; i++) {
@@ -9,7 +7,7 @@ function sumFor(numbers: number[]): number {
   return sum;
 }
 
-// Sum using a while-loop
+// Sum using a while
 function sumWhile(numbers: number[]): number {
   let sum = 0;
   let i = 0;
@@ -20,19 +18,17 @@ function sumWhile(numbers: number[]): number {
   return sum;
 }
 
-// Sum using recursion
+// Recursion
 function sumRecursion(numbers: number[]): number {
   if (numbers.length === 0) return 0;
   return numbers[0] + sumRecursion(numbers.slice(1));
 }
 
-// Sum using functional programming (reduce)
+// Redue
 function sumTheFunctionalWay(numbers: number[]): number {
   return numbers.reduce((acc, curr) => acc + curr, 0);
 }
-
-// Test all the functions
-console.log("sumFor:", sumFor([1, 2, 3, 4]));               // → 10
-console.log("sumWhile:", sumWhile([1, 2, 3, 4]));           // → 10
-console.log("sumRecursion:", sumRecursion([1, 2, 3, 4]));   // → 10
+console.log("sumFor:", sumFor([1, 2, 3, 4]));
+console.log("sumWhile:", sumWhile([1, 2, 3, 4]));
+console.log("sumRecursion:", sumRecursion([1, 2, 3, 4]));
 console.log("sumTheFunctionalWay:", sumTheFunctionalWay([1, 2, 3, 4])); // → 10
